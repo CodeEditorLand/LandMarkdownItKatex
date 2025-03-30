@@ -1,6 +1,28 @@
 {
 	"name": "@codeeditorland/markdown-it-katex",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Markdown-it plugin that provides VS Code's KaTeX support",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandMarkdownItKatex#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandMarkdownItKatex/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandMarkdownItKatex.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "dist/index.js",
 	"types": "types.d.ts",
 	"files": [
@@ -9,15 +31,20 @@
 	],
 	"scripts": {
 		"compile": "tsc -p .",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"test-render": "node test/test-render.js test/test.md > test/out.html"
 	},
 	"dependencies": {
 		"katex": "0.16.21"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/katex": "0.16.7",
 		"@types/markdown-it": "14.1.2",
 		"markdown-it": "14.1.0",
 		"tape": "5.9.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

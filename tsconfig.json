@@ -1,14 +1,23 @@
 {
 	"compilerOptions": {
-		"module": "CommonJS",
-		"target": "ES2022",
-		"strict": true,
-		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"esModuleInterop": true,
+		"module": "CommonJS",
+		"outDir": "Target",
 		"rootDir": "src",
-		"outDir": "dist",
-		"sourceMap": true
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2022"
 	},
-	"include": ["src/**/*.ts", "types.d.ts"],
-	"exclude": ["node_modules", "**/node_modules/*"]
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	],
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src/**/*.ts",
+		"types.d.ts",
+		"src"
+	]
 }
