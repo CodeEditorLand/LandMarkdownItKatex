@@ -38,7 +38,7 @@
 		"katex": "0.16.21"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"@types/katex": "0.16.7",
 		"@types/markdown-it": "14.1.2",
 		"markdown-it": "14.1.0",
